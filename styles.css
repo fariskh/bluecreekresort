@@ -38066,8 +38066,8 @@
     .u-section-2 .u-text-4 {
       margin-right: 0;
     }
-  }</style>
-      <style class="u-style"> .u-section-3 {
+  }
+   .u-section-3 {
     min-height: 799px;
   }
   .u-section-3 .u-text-1 {
@@ -38347,8 +38347,8 @@
       padding-left: 10px;
       padding-right: 10px;
     }
-  }</style>
-      <style class="u-style">.u-section-4 .u-sheet-1 {
+  }
+  .u-section-4 .u-sheet-1 {
     min-height: 732px;
   }
   .u-section-4 .u-layout-wrap-1 {
@@ -38393,7 +38393,7 @@
   }
   .u-section-4 .u-image-1 {
     min-height: 321px;
-    background-image: url("*****************.jpg");
+    background-image: url("assets/act2-swing.jpg");
     background-position: 50% 50%;
   }
   .u-section-4 .u-container-layout-2 {
@@ -38443,7 +38443,7 @@
   }
   .u-section-4 .u-image-2 {
     min-height: 321px;
-    background-image: url("*********************.jpg");
+    background-image: url("assets/act2-sitout-view.jpg");
     background-position: 50% 50%;
   }
   .u-section-4 .u-container-layout-5 {
@@ -38579,8 +38579,8 @@
     .u-section-4 .u-image-2 {
       min-height: 344px;
     }
-  }</style>
-      <style class="u-style"> .u-section-5 {
+  }
+   .u-section-5 {
     background-image: linear-gradient(0deg, rgba(41,46,51,0.25), rgba(41,46,51,0.25)), url("**********.jpg");
     background-position: 50% 50%;
   }
@@ -38691,8 +38691,7 @@
       width: auto;
       margin-top: 0;
     }
-  }</style>
-      <style class="u-style">.u-section-6 .u-sheet-1 {
+  }.u-section-6 .u-sheet-1 {
     min-height: 628px;
   }
   .u-section-6 .u-list-1 {
@@ -38804,8 +38803,7 @@
       padding-left: 20px;
       padding-right: 20px;
     }
-  }</style>
-      <style class="u-style"> .u-section-7 {
+  } .u-section-7 {
     min-height: 478px;
   }
   .u-section-7 .u-image-1 {
@@ -39047,8 +39045,8 @@
       margin-bottom: 50px;
       margin-left: calc(((100% - 340px) / 2) + 111px);
     }
-  }</style>
-      <style class="u-style">.u-section-8 .u-sheet-1 {
+  }
+  .u-section-8 .u-sheet-1 {
     min-height: 993px;
   }
   .u-section-8 .u-text-1 {
@@ -39394,8 +39392,8 @@
     .u-section-9 .u-repeater-1 {
       grid-template-columns: 100%;
     }
-  }</style>
-      <style class="u-style"> .u-section-10 {
+  }
+   .u-section-10 {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("*********.jpeg");
     background-position: 50% 50%;
   }
@@ -39477,5 +39475,16 @@
     }
     .u-section-10 .u-form-1 {
       width: 340px;
+    }
+  }
+
+  @media only screen and (min-width:300px) {
+    /* For mobile: */
+  
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .resp-issue-fix-1{
+      height: 700px !important;
     }
   }
