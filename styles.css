@@ -39480,11 +39480,22 @@
 
   @media only screen and (min-width:300px) {
     /* For mobile: */
-  
+    .booking-com-iframe{
+      height: 350px;
+      width: 350px;
+      border: 3px solid #007bff;
+      border-radius: 10px;
+    }
   }
   @media only screen and (min-width: 768px) {
     /* For desktop: */
     .resp-issue-fix-1{
       height: 700px !important;
+    }
+    .booking-com-iframe{
+      height: 350px;
+      width: 70%;
+      border: 3px solid #007bff;
+      border-radius: 10px;
     }
   }
