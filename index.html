@@ -115,6 +115,11 @@
               <div class="u-layout-col">
                 <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-white u-layout-cell-2">
                   <div class="u-container-layout u-valign-bottom u-container-layout-2">
+                    <text style="margin-bottom: 60px; font-family: 'Roboto Slab';">
+                      <b>Blue Creek Village Resort</b><br>
+                      Thanjilode Meppadi (PO) <br>
+                      673577 Wayanad <br>
+                      Kerala</text>
                     <p class="u-text u-text-3">Enveloped by nature's symphony, our tranquil resort beckons amidst
                       verdant landscapes, where the melody of a nearby creek serenades guests into a harmonious escape—a
                       tapestry of serenity woven by the gentle flow of its waters.<br>
@@ -562,59 +567,67 @@
   <section class="u-align-center u-clearfix u-image u-shading u-section-10 totarget" id="carousel_848a"
     data-image-width="1620" data-image-height="1080">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <h2 class="u-text u-text-default u-text-1">Book Your Room</h2>
-      <p class="u-text u-text-2">You can expect great wildlife photography opportunities and the chance to travel with a
-        group of like-minded individuals who love the great outdoors.</p>
-      <div class="u-form u-form-1">
-        <form method="POST"
-          class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email">
-          <!-- hidden inputs for siteId and pageId -->
-          <input type="hidden" id="siteId" name="siteId" value="2518443">
-          <input type="hidden" id="pageId" name="pageId" value="2518445">
-          <div class="u-form-group u-form-name">
-            <label for="name-c01d" class="u-form-control-hidden u-label">Name</label>
-            <input type="text" placeholder="Enter your Name" id="name" name="name"
-              class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-1"
-              required="">
-          </div><!-- always visible -->
-          <div class="u-form-email u-form-group" style="width: 100% !important;">
-            <label for="email-c01d" class="u-form-control-hidden u-label" style="width: 100% !important;">Check In Date</label>
-            <input type="date" id="checkindate" placeholder="Check In Date" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2" 
-              style="
-                width: 100% !important;-webkit-appearance: none !important;-moz-appearance: none !important;
-              ">
-          </div>
-          <div class="u-form-email u-form-group">
-            <label for="email-c01d" class="u-form-control-hidden u-label">Check Out Date</label>
-            <input type="date" id="checkoutdate" placeholder="Check Out Date" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2">
-          </div>
-          <div class="u-form-email u-form-group">
-            <label for="email-c01d" class="u-form-control-hidden u-label">How many Adults</label>
-            <input type="number" placeholder="How many Adults" id="adultsnumber" name="email"
-              class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2"
-              required="">
-          </div>
-          <div class="u-form-group u-form-submit">
-            <a onclick="chatOnWhatsapp()"
-              class="u-btn u-btn-round u-btn-submit u-button-style u-palette-3-base u-radius-10 u-btn-1"><img
-                src="assets/whatsapp.svg" style="height: 0.875rem;" /> Book </a>
-            <input type="submit" value="submit" class="u-form-control-hidden">
-          </div>
-          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try
-            again. </div>
-          <input type="hidden" value="" name="recaptchaResponse">
-        </form>
+      <div class="book-room-div">
+        <h2 class="u-text u-text-default u-text-1">Book Your Room</h2>
+        <p class="u-text u-text-2">You can expect great wildlife photography opportunities and the chance to travel with a
+          group of like-minded individuals who love the great outdoors.</p>
+        <div class="u-form u-form-1">
+          <form method="POST"
+            class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email">
+            <!-- hidden inputs for siteId and pageId -->
+            <input type="hidden" id="siteId" name="siteId" value="2518443">
+            <input type="hidden" id="pageId" name="pageId" value="2518445">
+            <div class="u-form-group u-form-name">
+              <label for="name" class="u-form-control-hidden u-label">Name</label>
+              <text class="book-room-text">Enter your Name</text>
+              <input type="text" placeholder="Enter your Name" id="name" name="name"
+                class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-1"
+                required="">
+            </div><!-- always visible -->
+            <div class="u-form-email u-form-group" style="width: 100% !important;">
+              <label for="checkindate" class="u-form-control-hidden u-label" style="width: 100% !important;">Check In Date</label>
+              <text class="book-room-text">Check In Date</text>
+              <input type="date" id="checkindate" name="checkindate" placeholder="Check In Date" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2" 
+                style="
+                  width: 100% !important;-webkit-appearance: none !important;-moz-appearance: none !important;
+                ">
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="checkoutdate" class="u-form-control-hidden u-label">Check Out Date</label>
+              <text class="book-room-text">Check Out Date</text>
+              <input type="date" id="checkoutdate" name="checkoutdate" placeholder="Check Out Date" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2" style="
+              width: 100% !important;-webkit-appearance: none !important;-moz-appearance: none !important;
+            ">
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="adultsnumber" class="u-form-control-hidden u-label">How many Adults</label>
+              <text class="book-room-text">How many Adults</text>
+              <input type="number" placeholder="How many Adults" id="adultsnumber" name="adultsnumber"
+                class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2"
+                required="">
+            </div>
+            <div class="u-form-group u-form-submit">
+              <a onclick="chatOnWhatsapp()"
+                class="u-btn u-btn-round u-btn-submit u-button-style u-palette-3-base u-radius-10 u-btn-1"><img
+                  src="assets/whatsapp.svg" style="height: 0.875rem;" /> Book </a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try
+              again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
+        </div>
+        <div class="u-social-icons u-spacing-42 u-social-icons-1">
+        </div>
       </div>
-      <div class="u-social-icons u-spacing-42 u-social-icons-1">
-      </div>
-    </div>
 
-    <div class="links-menu" style="margin-bottom: 20px;">
-      <div class="link-item">
-        <a href="https://www.booking.com/Share-VEBYtz" target="_blank">
-          <img src="assets/bookingcom.svg" style="width: 150px;" alt="Booking.com">
-        </a>
+      <div class="links-menu" style="margin-bottom: 20px;">
+        <div class="link-item">
+          <a href="https://www.booking.com/Share-VEBYtz" target="_blank">
+            <img src="assets/bookingcom.svg" style="width: 150px;" alt="Booking.com">
+          </a>
+        </div>
       </div>
     </div>
   </section>

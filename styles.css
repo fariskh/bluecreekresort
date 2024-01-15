@@ -39552,3 +39552,19 @@
     justify-content: center;
     text-align: center;
   }
+
+  /* .book-room-div {
+    box-shadow: 0 0px 5px 1px rgb(0 0 0);
+    background-color: rgb(0 0 0 / 40%);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+  }
+
+  div.book-room-div * {
+    color: white;
+    backdrop-filter: none;
+  } */
+
+  .book-room-text {
+    font-weight: bold;
+  }
