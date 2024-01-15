@@ -39488,6 +39488,11 @@
       width: 85vw;
       height: 250px;
     }
+    .small-img-box{
+      height: 232px;
+      background-size: cover;
+      box-shadow: 0px 0px 10px 2px black;
+    }
   }
   @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -39508,6 +39513,11 @@
       background-color: #ffffff80;
       width: 35vw;
       height: 250px;
+    }
+    .small-img-box{
+      height: 252px;
+      background-size: cover;
+      box-shadow: 0px 0px 30px 3px black;
     }
   }
 
