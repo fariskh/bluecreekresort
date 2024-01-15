@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="en">
-  <head>
-    <title>Blue Creek</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="gray">
-    <meta name="application-name" content="Blue Creek" />
-    <meta name="description" content="Blue Creek Village Resort">
 
-    <meta name="keywords" content="Best Creek side resort in Wayanad">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Blue Creek">
-    <meta property="og:description" content="Blue Creek Village Resort">
-
-    <meta property="og:image" itemprop="image" content="/img/logo.png">
-
-    <link rel="canonical" href="">
-    
-    <link rel="icon" href="assets/logo.svg" sizes="any" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css" media="screen">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+<head>
+  <title>Blue Creek</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="gray">
+  <meta name="application-name" content="Blue Creek" />
+  <meta property='og:title' content='Blue Creek'/>
+  <meta property='og:image' content='https://bluecreekresort.com/assets/thumb_nail.png'/>
+  <meta property='og:description' content='Blue Creek Village Resort'/>
+  <meta property='og:url' content='https://bluecreekresort.com'/>
+  <meta property='og:image:width' content='1200' />
+  <meta property='og:image:height' content='627' />
+  <meta property="og:type" content='website'/>
+  <meta name="keywords" content="Blue Creek Village Resort">
+  <link rel="icon" href="assets/logo.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" media="screen">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <script src="scripts.js"></script>
 </head>
-  <body class="u-body u-xl-mode" data-lang="en" onload="load()">
-<div onclick="
-  $('#contactwindow').css('transform','scale(0)');
-  $('.booknow').css('transform','scale(1)');
-" style="
+
+<body class="u-body u-xl-mode" data-lang="en">
+  <div  style="
   transform: scale(0);
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
-  position: fixed;
-  transition: all 500ms ease 0s;
-  transform-origin: 95% 5%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    transition: all 500ms ease 0s;
+    transform-origin: 95% 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 " id="contactwindow">
-  <div style="
-    margin-left: 10vw;
-    margin-top: 25vh;
-    width: 80vw;
-    height: 50vh;
-    border-radius: 30px;
-    box-shadow: #00000087 0px 0px 15px 15px;
-    backdrop-filter: blur(15px);
-    background-color: #ffffff80;
-  ">
-    <p align="right" onclick="
+    <div class="popup-main">
+      <div onclick="
       $('#contactwindow').css('transform','scale(0)');
       $('.booknow').css('transform','scale(1)');
     " style="
-      width: 100%;
-      padding-right: 25px;
       position: absolute;
       cursor: pointer;
       font-size: 40px;
-    " class="material-icons">&#xe5cd;</p>
-    <div style="
+      right: 15px;
+      top: 10px;
+    " class="material-icons">&#xe5cd;</div>
+      <div style="
       width: 100%;
       height: 100%;
       display: flex;
@@ -67,31 +61,28 @@
       align-content: center;
       justify-content: space-evenly;
     ">
-      <div>
-        <!-- <a href="https://wa.me/918592897844?text=I'm%20interested%20to%20book%20the%20room%20of%0a%0a*thees*" target="_blank"> -->
-          <img onclick="$('html,body').animate({scrollTop: $('.totarget').offset().top},'slow');" src="assets/whatsapp.svg" width="100px"/>
-        <!-- </a> -->
-      </div>
-      <div>
-        <a href="tel:+918592897844" target="_blank">
-          <img src="assets/call.svg" width="100px"/>
-        </a>
+        <div>
+          <!-- <a href="https://wa.me/918592897844?text=I'm%20interested%20to%20book%20the%20room%20of%0a%0a*thees*" target="_blank"> -->
+          <img onclick="$('html,body').animate({scrollTop: $('.totarget').offset().top},'slow');$('#contactwindow').css('transform','scale(0)');
+          $('.booknow').css('transform','scale(1)');"
+            src="assets/whatsapp.svg" width="100px" />
+          <!-- </a> -->
+        </div>
+        <div>
+          <a href="tel:+918592897844" target="_blank">
+            <img src="assets/call.svg" width="100px" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="mainheader" style="
-position: fixed;
-width: 100%;
-z-index: 1;
-display: flex;
-">
-  <a href="#">
-    <img src="assets/logo.svg" style="margin: 10px; width: 110px;"/>
-  </a>
-  <div style="margin-left:auto;display: flex;">
-    <button onclick="
+  <div class="mainheader" style="position: fixed; width: 100%; z-index: 1;display: flex;">
+    <a href="#">
+      <img src="assets/logo.svg" style="margin: 10px; width: 110px;" />
+    </a>
+    <div style="margin-left:auto;display: flex;">
+      <button onclick="
     $('#contactwindow').css('transform','scale(1)');
     $('.booknow').css('transform','scale(0)');
     " class="booknow btn btn-success" style="
@@ -100,37 +91,77 @@ display: flex;
     margin-right: 20px;
     transition:500ms;
         ">Book Now</button>
+    </div>
   </div>
-</div>
 
-<section class="u-align-left u-clearfix u-image u-section-2" id="sec-fbe7">
-  <div class="u-clearfix u-sheet u-valign-bottom-xs u-sheet-1">
-    <div class="u-clearfix u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
-      <div class="u-gutter-0 u-layout">
-        <div class="u-layout-row">
-          <div class="u-size-35">
-            <div class="u-layout-row">
-              <div class="u-align-right u-container-style u-layout-cell u-opacity u-opacity-55 u-palette-5-dark-3 u-size-60 u-layout-cell-1">
-                <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <h1><br></h1>
-                  <h5 class="u-custom-font u-text u-text-font u-text-1">Village Resort</h5>
-                  <h2 class="u-custom-font u-font-roboto-slab u-text u-text-2">Blue Creek</h2>
+  <section class="u-align-left u-clearfix u-image u-section-2" id="sec-fbe7">
+    <div class="u-clearfix u-sheet u-valign-bottom-xs u-sheet-1">
+      <div class="u-clearfix u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-35">
+              <div class="u-layout-row">
+                <div
+                  class="u-align-right u-container-style u-layout-cell u-opacity u-opacity-55 u-palette-5-dark-3 u-size-60 u-layout-cell-1">
+                  <div class="u-container-layout u-valign-top u-container-layout-1">
+                    <h1><br></h1>
+                    <h5 class="u-custom-font u-text u-text-font u-text-1">Village Resort</h5>
+                    <h2 class="u-custom-font u-font-roboto-slab u-text u-text-2">Blue Creek</h2>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="u-size-25">
-            <div class="u-layout-col">
-              <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-white u-layout-cell-2">
-                <div class="u-container-layout u-valign-bottom u-container-layout-2">
-                  <p class="u-text u-text-3">Enveloped by nature's symphony, our tranquil resort beckons amidst verdant landscapes, where the melody of a nearby creek serenades guests into a harmonious escape—a tapestry of serenity woven by the gentle flow of its waters.<br>
-                  <div class="u-social-icons u-spacing-23 u-social-icons-1">
-                    <a class="u-social-url" target="_blank" href=""><span class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-5225"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-5225"><path d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg></span>
-                    </a>
-                    <a class="u-social-url" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-8eed"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-8eed"><path d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2 c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7 c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2 c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5 c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path></svg></span>
-                    </a>
-                    <a class="u-social-url" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-3942"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-3942"><path d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path><path d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path><path d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path></svg></span>
-                    </a>
+            <div class="u-size-25">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-white u-layout-cell-2">
+                  <div class="u-container-layout u-valign-bottom u-container-layout-2">
+                    <p class="u-text u-text-3">Enveloped by nature's symphony, our tranquil resort beckons amidst
+                      verdant landscapes, where the melody of a nearby creek serenades guests into a harmonious escape—a
+                      tapestry of serenity woven by the gentle flow of its waters.<br>
+                    <div class="u-social-icons u-spacing-23 u-social-icons-1">
+                      <a class="u-social-url" target="_blank" href=""><span
+                          class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link"
+                            preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                            <use xlink:href="#svg-5225"></use>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px"
+                            y="0px" id="svg-5225">
+                            <path
+                              d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z">
+                            </path>
+                          </svg></span>
+                      </a>
+                      <a class="u-social-url" target="_blank" href=""><span
+                          class="u-icon u-icon-circle u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link"
+                            preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                            <use xlink:href="#svg-8eed"></use>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px"
+                            y="0px" id="svg-8eed">
+                            <path
+                              d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2 c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7 c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2 c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5 c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z">
+                            </path>
+                          </svg></span>
+                      </a>
+                      <a class="u-social-url" target="_blank" href=""><span
+                          class="u-icon u-icon-circle u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link"
+                            preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                            <use xlink:href="#svg-3942"></use>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px"
+                            y="0px" id="svg-3942">
+                            <path
+                              d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z">
+                            </path>
+                            <path
+                              d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z">
+                            </path>
+                            <path
+                              d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z">
+                            </path>
+                          </svg></span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -139,504 +170,530 @@ display: flex;
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="u-align-center u-clearfix u-valign-middle-sm u-valign-middle-xl u-section-3" id="carousel_b818">
-  <h3 class="u-text u-text-default-xl u-text-1"> Experience the high spirits of summer and precipitation by being active</h3>
-  <p class="u-text u-text-2">Discover the beauty of our resort, surrounded by nature's wonders and a nearby creek. Make the most of your stay by enjoying our range of activities and amenities. </p>
-  <img class="u-expanded-width u-image u-image-1 resp-issue-fix-1" src="assets/activities.jpg" data-image-width="1920" data-image-height="737">
-  <div class="u-list u-list-1">
-    <div class="u-repeater u-repeater-1">
-      <div class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-10 u-repeater-item u-shape-round u-list-item-1">
-        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
-          <h4 class="u-text u-text-4"> Perfectly organised</h4>
-          <p class="u-text u-text-5">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-          <a href="" class="u-active-none u-border-3 u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-top-left-radius-0 u-top-right-radius-0 u-btn-2">learn more</a>
-        </div>
-      </div>
-      <div class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-10 u-repeater-item u-shape-round u-list-item-2">
-        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3909.382900837381!2d76.13847887505291!3d11.524366688673554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDMxJzI3LjciTiA3NsKwMDgnMjcuOCJF!5e0!3m2!1sen!2sin!4v1704899929268!5m2!1sen!2sin" style="
-            border: 0px;
-            width: 100%;
-            height: 210px;
-            border-radius: 20px 20px 10px 10px;
-            box-shadow: #28413382 0px 0px 2px 5px;
-            " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <br>
-          <a href="https://maps.app.goo.gl/uLgQEfWBHYb5N8XH6" target="_blank" style="
-            margin-bottom: 0;
-            margin-top: auto;
-          ">
-            <button class="btn btn-primary" style="
-            font-size: 24px;
-            border-radius: 10px 10px 20px 20px;
-            "><text class="material-icons">&#xe52e;</text> Get Direction</button>
+  </section>
+  <section class="u-align-center u-clearfix u-valign-middle-sm u-valign-middle-xl u-section-3" id="carousel_b818">
+    <h3 class="u-text u-text-default-xl u-text-1"> Experience the high spirits of summer and precipitation by being
+      active</h3>
+    <p class="u-text u-text-2">Discover the beauty of our resort, surrounded by nature's wonders and a nearby creek.
+      Make the most of your stay by enjoying our range of activities and amenities. </p>
+    <div src="assets/activities.jpg" style="background-image: url(assets/activities.jpg); height: 737px; display: flex;
+  flex-direction: column-reverse;
+  align-items: center; justify-content: center;">
+      <div style="
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    box-shadow: black 1px 0px 15px 1px;
+    border-radius: 30px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3909.382900837381!2d76.13847887505291!3d11.524366688673554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDMxJzI3LjciTiA3NsKwMDgnMjcuOCJF!5e0!3m2!1sen!2sin!4v1704899929268!5m2!1sen!2sin"
+          style="width: 100%;
+      height: 40vh;
+      border: 0px;
+      border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div style="position: absolute; margin-top: 32vh;">
+          <a href="https://maps.app.goo.gl/uLgQEfWBHYb5N8XH6" class="btn btn-primary" target="_blank" style="
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: center;">
+            <text class="material-icons">&#xe52e;</text> Get Direction
           </a>
         </div>
       </div>
-      <div class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-10 u-repeater-item u-shape-round u-list-item-3">
-        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span class="u-file-icon u-icon u-text-white u-icon-3"><img src="data:image/png;base64,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" alt=""></span>
-          <h4 class="u-text u-text-8"> The best routes</h4>
-          <p class="u-text u-text-9">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-          <a href="" class="u-active-none u-border-3 u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-top-left-radius-0 u-top-right-radius-0 u-btn-4">learn more</a>
-        </div>
-      </div>
-      <div class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-10 u-repeater-item u-shape-round u-list-item-4">
-        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-file-icon u-icon u-text-white u-icon-4"><img src="data:image/png;base64,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" alt=""></span>
-          <h4 class="u-text u-text-10">Active​Walking</h4>
-          <p class="u-text u-text-11">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-          <a href="" class="u-active-none u-border-3 u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-top-left-radius-0 u-top-right-radius-0 u-btn-5">learn more</a>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="assets/carousel-1.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-2.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-3.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-4.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-5.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-6.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-7.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-8.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-9.jpeg" alt="slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="assets/carousel-10.jpeg" alt="slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</section>
-
-<section class="u-align-center u-clearfix u-section-4" id="carousel_0839">
-  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-    <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-      <div class="u-layout">
-        <div class="u-layout-row">
-          <div class="u-size-28-lg u-size-28-xl u-size-29-sm u-size-29-xs u-size-60-md">
-            <div class="u-layout-col">
-              <div class="u-align-center u-container-style u-layout-cell u-radius-30 u-shape-round u-size-60 u-white u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle u-container-layout-1">
-                  <h2 class="u-custom-font u-font-montserrat u-text u-text-1"> Step by step into your hiking happiness</h2>
-                  <p class="u-text u-text-2">Quickly incentivize impactful action items before tactical collaboration and idea-sharing. Monotonically engage market-driven intellectual capital.</p>
-                  <a href="https://nicepage.site" class="u-active-palette-3-dark-3 u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-dark-3 u-palette-3-base u-radius-10 u-text-body-alt-color u-btn-2">learn more</a>
+    </img>
+  </section>
+  <section class="u-align-center u-clearfix u-section-4" id="carousel_0839">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-28-lg u-size-28-xl u-size-29-sm u-size-29-xs u-size-60-md">
+              <div class="u-layout-col">
+                <div
+                  class="u-align-center u-container-style u-layout-cell u-radius-30 u-shape-round u-size-60 u-white u-layout-cell-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <h2 class="u-custom-font u-font-montserrat u-text u-text-1"> Step by step into your tour of exploration
+                    </h2>
+                    <p class="u-text u-text-2">Embark on a journey of joyous exploration as you take each step into the bliss of hiking paradise at our resort.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="u-size-31-sm u-size-31-xs u-size-32-lg u-size-32-xl u-size-60-md">
-            <div class="u-layout-col">
-              <div class="u-size-30">
-                <div class="u-layout-row">
-                  <div class="u-container-style u-image u-image-round u-layout-cell u-radius-30 u-shape-rectangle u-size-30 u-image-1" data-image-width="696" data-image-height="696">
-                    <div class="u-container-layout u-container-layout-2"></div>
+            <div class="u-size-31-sm u-size-31-xs u-size-32-lg u-size-32-xl u-size-60-md">
+              <div class="u-layout-col">
+                <div class="u-size-30">
+                  <div class="u-layout-row">
+                    <div
+                      class="u-container-style u-image u-image-round u-layout-cell u-radius-30 u-shape-rectangle u-size-30 u-image-1"
+                      data-image-width="696" data-image-height="696">
+                      <div class="u-container-layout u-container-layout-2"></div>
+                    </div>
+                    <div
+                      class="u-container-style u-image u-image-round u-layout-cell u-radius-30 u-shape-rectangle u-size-30 u-image-1"
+                      data-image-width="696" data-image-height="696">
+                      <div class="u-container-layout u-container-layout-2"></div>
+                    </div>
                   </div>
-                  <div class="u-container-style u-layout-cell u-palette-3-base u-radius-30 u-shape-round u-size-30 u-layout-cell-3">
-                    <div class="u-container-layout u-valign-middle u-container-layout-3">
-                      <h5 class="u-text u-text-default u-text-4">Sample Headline</h5>
-                      <p class="u-text u-text-5"> Cursus vitae congue mauris rhoncus aenean. Et egestas quis ipsum suspendisse. </p>
-                      <a href="https://nicepage.com/landing-page" class="u-active-none u-align-center u-border-1 u-border-active-palette-3-light-2 u-border-hover-palette-3-light-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-style u-hover-none u-none u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-btn-3">more</a>
+                </div>
+                <div class="u-size-30">
+                  <div class="u-layout-row">
+                    <div
+                      class="u-container-style u-image u-image-round u-layout-cell u-radius-30 u-shape-rectangle u-size-30 u-image-2"
+                      data-image-width="887" data-image-height="887">
+                      <div class="u-container-layout u-container-layout-5"></div>
+                    </div>
+                    <div
+                      class="u-container-style u-image u-image-round u-layout-cell u-radius-30 u-shape-rectangle u-size-30 u-image-2"
+                      data-image-width="887" data-image-height="887">
+                      <div class="u-container-layout u-container-layout-5"></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="u-size-30">
-                <div class="u-layout-row">
-                  <div class="u-container-style u-layout-cell u-palette-3-base u-radius-30 u-shape-round u-size-30 u-layout-cell-4">
-                    <div class="u-container-layout u-valign-middle u-container-layout-4">
-                      <h5 class="u-text u-text-default u-text-6">Sample Headline</h5>
-                      <p class="u-text u-text-7"> Cursus vitae congue mauris rhoncus aenean. Et egestas quis ipsum suspendisse. </p>
-                      <a href="https://nicepage.me" class="u-active-none u-align-center u-border-1 u-border-active-palette-3-light-2 u-border-hover-palette-3-light-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-style u-hover-none u-none u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-btn-4">more</a>
-                    </div>
-                  </div>
-                  <div class="u-container-style u-image u-image-round u-layout-cell u-radius-30 u-shape-rectangle u-size-30 u-image-2" data-image-width="887" data-image-height="887">
-                    <div class="u-container-layout u-container-layout-5"></div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="skrollable skrollable-between u-align-center u-clearfix u-image u-shading u-section-5" id="carousel_f640" src="" data-image-width="1620" data-image-height="1080">
-  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-    <h2 class="u-text u-text-default u-text-1"> Hiking through Europe ...</h2>
-    <p class="u-large-text u-text u-text-variant u-text-2">Simple Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.</p>
-    <div class="u-clearfix u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
-      <div class="u-layout">
-        <div class="u-layout-row">
-          <div class="u-align-center-xs u-align-right-lg u-align-right-md u-align-right-sm u-align-right-xl u-container-style u-layout-cell u-left-cell u-size-30-lg u-size-30-md u-size-30-sm u-size-30-xl u-size-60-xs u-layout-cell-1">
-            <div class="u-container-layout u-valign-middle u-container-layout-1">
-              <a href="https://nicepage.best" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-palette-3-base u-btn u-btn-round u-button-style u-hover-white u-palette-3-base u-radius-10 u-text-active-palette-3-base u-text-hover-palette-3-base u-btn-1">Learn More</a>
+  </section>
+  <section class="skrollable skrollable-between u-align-center u-clearfix u-image u-shading u-section-5"
+    id="carousel_f640" src="" data-image-width="1620" data-image-height="1080">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <h2 class="u-text u-text-default u-text-1"> Take a Rejuvenating Dip ...</h2>
+      <p class="u-large-text u-text u-text-variant u-text-2">Immerse yourself in pure delight as you savor the refreshing embrace of natural creek waters right at your fingertips, inviting you to take a rejuvenating dip.</p>
+      <div class="u-clearfix u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-6" id="sec-1c14">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-expanded-width u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div
+            class="u-container-style u-image u-image-round u-list-item u-radius-10 u-repeater-item u-shading u-image-1"
+            data-image-width="720" data-image-height="1080">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+              <h3 class="u-text u-text-default u-text-1"> Under the Tent</h3>
+              <p class="u-text u-text-default u-text-2">Experience the allure of nature up close by staying in our cozy tents, where the rustic charm meets modern comfort for an unforgettable retreat.</p>
             </div>
           </div>
-          <div class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-30-lg u-size-30-md u-size-30-sm u-size-30-xl u-size-60-xs u-layout-cell-2">
-            <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-valign-top-xs u-container-layout-2">
-              <a href="https://nicepage.com/k/blank-html-templates" class="u-active-white u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-radius-10 u-btn-2">View Tours</a>
+          <div
+            class="u-container-style u-image u-image-round u-list-item u-radius-10 u-repeater-item u-shading u-image-2"
+            data-image-width="717" data-image-height="1080">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+              <h3 class="u-text u-text-default u-text-3">Swing into Relaxation</h3>
+              <p class="u-text u-text-default u-text-4">Find solace in the gentle sway of our carefully crafted swings, inviting you to embrace the present moment, suspended between the nostalgia of childhood and the serenity of nature</p>
+            </div>
+          </div>
+          <div
+            class="u-container-style u-image u-image-round u-list-item u-radius-10 u-repeater-item u-shading u-image-3"
+            data-image-width="740" data-image-height="925">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+              <h3 class="u-text u-text-default u-text-5">Flames of Togetherness</h3>
+              <p class="u-text u-text-default u-text-6">Gather around the mesmerizing glow of our campfire, where crackling flames set the stage for shared stories, laughter, and cherished moments beneath the starlit sky.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="u-align-center u-clearfix u-section-6" id="sec-1c14">
-  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-    <div class="u-expanded-width u-list u-list-1">
+  </section>
+  <section class="u-align-center u-clearfix u-valign-top-md u-valign-top-sm u-section-7" src="" id="carousel_70ee">
+    <img class="u-expanded-width u-image u-image-1" src="assets/villas-long-view.jpg" data-image-width="1920"
+      data-image-height="738">
+    <div class="u-list u-list-1">
       <div class="u-repeater u-repeater-1">
-        <div class="u-container-style u-image u-image-round u-list-item u-radius-10 u-repeater-item u-shading u-image-1" data-image-width="720" data-image-height="1080">
+        <div
+          class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-20 u-repeater-item u-shape-round u-list-item-1">
           <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-            <h3 class="u-text u-text-default u-text-1"> Hiking &amp; Summer</h3>
-            <p class="u-text u-text-default u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            <div class="u-border-2 u-border-palette-3-light-2 u-container-style u-group u-shape-circle u-group-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-2">
+                <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-1"
+                  data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">2k</h3>
+              </div>
+            </div>
+            <h5 class="u-text u-text-body-alt-color u-text-default u-text-2">Happy Customers</h5>
           </div>
         </div>
-        <div class="u-container-style u-image u-image-round u-list-item u-radius-10 u-repeater-item u-shading u-image-2" data-image-width="717" data-image-height="1080">
-          <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-            <h3 class="u-text u-text-default u-text-3">Family Holidays</h3>
-            <p class="u-text u-text-default u-text-4">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-          </div>
-        </div>
-        <div class="u-container-style u-image u-image-round u-list-item u-radius-10 u-repeater-item u-shading u-image-3" data-image-width="740" data-image-height="925">
+        <div
+          class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-20 u-repeater-item u-shape-round u-list-item-2">
           <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-            <h3 class="u-text u-text-default u-text-5">Hiking Holiday</h3>
-            <p class="u-text u-text-default u-text-6">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            <div class="u-border-2 u-border-palette-3-light-2 u-container-style u-group u-shape-circle u-group-2">
+              <div class="u-container-layout u-valign-middle u-container-layout-4">
+                <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-3"
+                  data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">60</h3>
+              </div>
+            </div>
+            <h5 class="u-text u-text-body-alt-color u-text-default u-text-4">Active Tours</h5>
+          </div>
+        </div>
+        <div
+          class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-20 u-repeater-item u-shape-round u-list-item-3">
+          <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+            <div class="u-border-2 u-border-palette-3-light-2 u-container-style u-group u-shape-circle u-group-3">
+              <div class="u-container-layout u-valign-middle u-container-layout-6">
+                <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-5"
+                  data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">27</h3>
+              </div>
+            </div>
+            <h5 class="u-text u-text-body-alt-color u-text-default u-text-6"> Travel Experts</h5>
+          </div>
+        </div>
+        <div
+          class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-20 u-repeater-item u-shape-round u-list-item-4">
+          <div class="u-container-layout u-similar-container u-valign-top u-container-layout-7">
+            <div class="u-border-2 u-border-palette-3-light-2 u-container-style u-group u-shape-circle u-group-4">
+              <div class="u-container-layout u-valign-middle u-container-layout-8">
+                <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-7"
+                  data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">34</h3>
+              </div>
+            </div>
+            <h5 class="u-text u-text-body-alt-color u-text-default u-text-8">awards</h5>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="u-align-center u-clearfix u-valign-top-md u-valign-top-sm u-section-7" src="" id="carousel_70ee">
-  <img class="u-expanded-width u-image u-image-1" src="assets/villas-long-view.jpg" data-image-width="1920" data-image-height="738">
-  <div class="u-list u-list-1">
-    <div class="u-repeater u-repeater-1">
-      <div class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-20 u-repeater-item u-shape-round u-list-item-1">
-        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-          <div class="u-border-2 u-border-palette-3-light-2 u-container-style u-group u-shape-circle u-group-1">
-            <div class="u-container-layout u-valign-middle u-container-layout-2">
-              <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-1" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">2k</h3>
+  </section>
+  <section class="u-align-center u-clearfix u-section-8" id="carousel_8d35">
+    <div
+      class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
+      <h3 class="u-align-right-sm u-align-right-xs u-text u-text-default u-text-1"> Bask in Nature's Summer Glow </h3>
+      <p class="u-align-right-sm u-align-right-xs u-text u-text-2"> Summer unfolds its vibrant canvas at our resort, inviting you to revel in the simple pleasures of sunshine, lush greenery, and carefree laughter amid the beauty that surrounds you. </p>
+      <img
+        class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-image u-image-round u-radius-20 u-image-1"
+        src="assets/act-swing-view.jpg" data-image-width="700" data-image-height="976">
+      <div class="u-clearfix u-expanded-width-md u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div
+              class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20-lg u-size-20-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-1">
+              <div
+                class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
+                <img class="u-image u-image-round u-radius-20 u-image-2" src="assets/act-camp-fire.jpg">
+                <p class="u-text u-text-default-xl u-text-3">Pack essentials, stay hydrated, and enjoy the mountain trek. Every step is a new adventure, so take it slow and relish the journey.</p>
+              </div>
             </div>
-          </div>
-          <h5 class="u-text u-text-body-alt-color u-text-default u-text-2">Happy Customers</h5>
-        </div>
-      </div>
-      <div class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-20 u-repeater-item u-shape-round u-list-item-2">
-        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-          <div class="u-border-2 u-border-palette-3-light-2 u-container-style u-group u-shape-circle u-group-2">
-            <div class="u-container-layout u-valign-middle u-container-layout-4">
-              <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-3" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">60</h3>
+            <div
+              class="u-container-style u-layout-cell u-size-20-lg u-size-20-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-2">
+              <div class="u-container-layout u-container-layout-2"></div>
             </div>
-          </div>
-          <h5 class="u-text u-text-body-alt-color u-text-default u-text-4">Active Tours</h5>
-        </div>
-      </div>
-      <div class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-20 u-repeater-item u-shape-round u-list-item-3">
-        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
-          <div class="u-border-2 u-border-palette-3-light-2 u-container-style u-group u-shape-circle u-group-3">
-            <div class="u-container-layout u-valign-middle u-container-layout-6">
-              <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-5" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">27</h3>
-            </div>
-          </div>
-          <h5 class="u-text u-text-body-alt-color u-text-default u-text-6"> Travel Experts</h5>
-        </div>
-      </div>
-      <div class="u-align-center u-container-style u-list-item u-palette-3-base u-radius-20 u-repeater-item u-shape-round u-list-item-4">
-        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-7">
-          <div class="u-border-2 u-border-palette-3-light-2 u-container-style u-group u-shape-circle u-group-4">
-            <div class="u-container-layout u-valign-middle u-container-layout-8">
-              <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-7" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">34</h3>
-            </div>
-          </div>
-          <h5 class="u-text u-text-body-alt-color u-text-default u-text-8">awards</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-  </p>
-</section>
-<section class="u-align-center u-clearfix u-section-8" id="carousel_8d35">
-  <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
-    <h3 class="u-align-right-sm u-align-right-xs u-text u-text-default u-text-1"> Experience the high spirits of summer by being active</h3>
-    <p class="u-align-right-sm u-align-right-xs u-text u-text-2"> Sample text. Click to select the text box. Click again or double click to start editing the text.&nbsp;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <img class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-image u-image-round u-radius-20 u-image-1" src="assets/act-swing-view.jpg" data-image-width="700" data-image-height="976">
-    <div class="u-clearfix u-expanded-width-md u-layout-wrap u-layout-wrap-1">
-      <div class="u-layout">
-        <div class="u-layout-row">
-          <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20-lg u-size-20-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-1">
-            <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
-              <img class="u-image u-image-round u-radius-20 u-image-2" src="assets/act-camp-fire.jpg">
-              <p class="u-text u-text-default-xl u-text-3">The way up to the top of the mountain is always longer than you think. Don’t fool yourself, the moment will...</p>
-            </div>
-          </div>
-          <div class="u-container-style u-layout-cell u-size-20-lg u-size-20-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-2">
-            <div class="u-container-layout u-container-layout-2"></div>
-          </div>
-          <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20-lg u-size-20-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-3">
-            <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-xl u-valign-middle-md u-valign-top-sm u-valign-top-xs u-container-layout-3">
-              <img class="u-expanded-width-lg u-expanded-width-xl u-image u-image-round u-radius-20 u-image-3" src="assets/act-tent-view.jpg" data-image-width="484" data-image-height="717">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="u-clearfix u-palette-3-base u-section-9" id="sec-40f3">
-  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-    <div class="u-expanded-width u-list u-list-1">
-      <div class="u-repeater u-repeater-1">
-        <div class="u-container-style u-list-item u-repeater-item">
-          <div class="u-container-layout u-similar-container u-container-layout-1">
-            <h4 class="u-text u-text-default u-text-1"> Before the tour</h4>
-            <ul class="u-custom-list u-file-icon u-text u-text-2">
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-1">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>
-              </li>
-              <li style="padding-left: 4px;">
-                <a href="https://nicepage.com/website-builder" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-btn-1" target="_blank">Complete-Safety-Package</a>
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-1">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>
-                <a href="https://nicepage.me" class="u-active-none u-btn u-button-link u-button-style u-hover-none u-none u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-btn-2" target="_blank">Travel Checklist</a>
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-1">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Conditions of travel
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-1">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Travel insurance
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-1">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Arrival
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-1">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Online Payment
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-1">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Discounts
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-1">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Hiking-App
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="u-container-style u-list-item u-repeater-item">
-          <div class="u-container-layout u-similar-container u-container-layout-2">
-            <h4 class="u-text u-text-default u-text-3"> During the tour</h4>
-            <ul class="u-custom-list u-file-icon u-text u-text-4">
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-9">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div> During the tour
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-9">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Hotels
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-9">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Luggage transfers
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-9">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Travel documents
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-9">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>On-site support
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-9">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Level of hiking
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="u-container-style u-list-item u-repeater-item">
-          <div class="u-container-layout u-similar-container u-container-layout-3">
-            <h4 class="u-text u-text-default u-text-5"> After the tour</h4>
-            <ul class="u-custom-list u-file-icon u-text u-text-6">
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-15">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-85ca"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div> Travel feedback
-              </li>
-              <li style="padding-left: 4px;">
-                <div class="u-list-icon u-list-icon-15">
-                  <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-85ca"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
-                </div>Regular customer discount
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="u-align-center u-clearfix u-image u-shading u-section-10 totarget" id="carousel_848a" data-image-width="1620" data-image-height="1080">
-  <div class="u-clearfix u-sheet u-sheet-1">
-    <h2 class="u-text u-text-default u-text-1">Contact Us</h2>
-    <p class="u-text u-text-2">You can expect great wildlife photography opportunities and the chance to travel with a group of like-minded individuals who love the great outdoors.</p>
-    <div class="u-form u-form-1">
-      <form action="" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email"><!-- hidden inputs for siteId and pageId -->
-        <input type="hidden" id="siteId" name="siteId" value="2518443">
-        <input type="hidden" id="pageId" name="pageId" value="2518445">
-        <div class="u-form-group u-form-name">
-          <label for="name-c01d" class="u-form-control-hidden u-label">Name</label>
-          <input type="text" placeholder="Enter your Name" id="name-c01d" name="name" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-1" required="">
-        </div><!-- always visible -->
-        <div class="u-form-email u-form-group">
-          <label for="email-c01d" class="u-form-control-hidden u-label">Email</label>
-          <input type="email" placeholder="Enter a valid email address" id="email-c01d" name="email" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2" required="">
-        </div>
-        <div class="u-form-group u-form-message">
-          <label for="message-c01d" class="u-form-control-hidden u-label">Message</label>
-          <textarea placeholder="Enter your message" rows="4" cols="50" id="message-c01d" name="message" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-3" required=""></textarea>
-        </div>
-        <div class="u-form-group u-form-submit">
-          <a onclick="
-            window.open(
-              'https://wa.me/918592897844?text=I'm%20interested%20to%20book%20the%20room%20of%0a%0a*thees*',
-              '_blank'
-            );
-            " class="u-btn u-btn-round u-btn-submit u-button-style u-palette-3-base u-radius-10 u-btn-1 material-icons"><img src="assets/whatsapp.svg" style="height: 0.875rem;"/> Chat to WhatsApp &#xe163;</a>
-          <input type="submit" value="submit" class="u-form-control-hidden">
-        </div>
-        <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-        <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-        <input type="hidden" value="" name="recaptchaResponse">
-      </form>
-    </div>
-    <div class="u-social-icons u-spacing-42 u-social-icons-1">
-
-    </div>
-  </div>
-</section>
-
-<section class="u-align-center u-clearfix u-section-4" id="carousel_0839">
-  <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-    <h1>Book via <img src="assets/bookingcom.svg" height="33px" /></h1>
-    <iframe class="booking-com-iframe" src="https://www.booking.com/Share-SiuWYT"></iframe>
-    <br>
-    <a href="https://www.booking.com/Share-SiuWYT" target="_blank">
-      <button class="btn btn-primary" style="
-        margin-top: -47px;
-        border-radius: 10px;
-      ">Launch <img src="assets/bookingcom-min.svg" style="height: 33px;"/></button>
-    </a>
-    <br>
-  </div>
-</section>
-
-<footer class="u-align-center-sm u-align-center-xs u-black u-clearfix u-footer" id="sec-1d45"><div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
-        <a href="#" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-          <img src="assets/logo.svg" class="u-logo-image u-logo-image-1">
-        </a>
-        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-          <div class="u-gutter-0 u-layout">
-            <div class="u-layout-row">
-              <div style="margin: auto;text-align: center;" class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-15 u-size-30-md u-layout-cell-4">
-                <div class="u-container-layout u-valign-top u-container-layout-4">
-                  <h6 class="u-text u-text-7">Blue Creek</h6>
-                  <p class="u-small-text u-text u-text-variant u-text-8">Village Resort</p>
-                </div>
+            <div
+              class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20-lg u-size-20-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-3">
+              <div
+                class="u-container-layout u-valign-bottom-lg u-valign-bottom-xl u-valign-middle-md u-valign-top-sm u-valign-top-xs u-container-layout-3">
+                <img class="u-expanded-width-lg u-expanded-width-xl u-image u-image-round u-radius-20 u-image-3"
+                  src="assets/act-tent-view.jpg" data-image-width="484" data-image-height="717">
               </div>
             </div>
           </div>
         </div>
-        <div class="u-social-icons u-spacing-20 u-social-icons-1">
-          <a class="u-social-url" title="facebook" target="_blank" href=""><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-de1f"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-de1f"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
-            c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
-          </a>
-          <a class="u-social-url" title="twitter" target="_blank" href=""><span class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-a80e"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-a80e"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-palette-3-base u-section-9" id="sec-40f3">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-expanded-width u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-1">
+              <h4 class="u-text u-text-default u-text-1"> Before the tour</h4>
+              <ul class="u-custom-list u-file-icon u-text u-text-2">
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-1">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </li>
+                <li style="padding-left: 4px;">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-btn-1"
+                    target="_blank">Complete-Safety-Package</a>
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-1">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <a class="u-active-none u-btn u-button-link u-button-style u-hover-none u-none u-text-active-palette-3-light-2 u-text-body-alt-color u-text-hover-palette-3-light-2 u-btn-2"
+                    target="_blank">Travel Checklist</a>
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-1">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Conditions of travel
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-1">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Travel insurance
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-1">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Arrival
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-1">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Online Payment
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-1">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Discounts
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-1">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-ba54">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Hiking-App
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-2">
+              <h4 class="u-text u-text-default u-text-3"> During the tour</h4>
+              <ul class="u-custom-list u-file-icon u-text u-text-4">
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-9">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div> During the tour
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-9">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Hotels
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-9">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Luggage transfers
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-9">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Travel documents
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-9">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>On-site support
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-9">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-c914">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Level of hiking
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-3">
+              <h4 class="u-text u-text-default u-text-5"> After the tour</h4>
+              <ul class="u-custom-list u-file-icon u-text u-text-6">
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-15">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-85ca">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div> Travel feedback
+                </li>
+                <li style="padding-left: 4px;">
+                  <div class="u-list-icon u-list-icon-15">
+                    <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-85ca">
+                      <path
+                        d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>Regular customer discount
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-image u-shading u-section-10 totarget" id="carousel_848a"
+    data-image-width="1620" data-image-height="1080">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h2 class="u-text u-text-default u-text-1">Book Your Room</h2>
+      <p class="u-text u-text-2">You can expect great wildlife photography opportunities and the chance to travel with a
+        group of like-minded individuals who love the great outdoors.</p>
+      <div class="u-form u-form-1">
+        <form method="POST"
+          class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email">
+          <!-- hidden inputs for siteId and pageId -->
+          <input type="hidden" id="siteId" name="siteId" value="2518443">
+          <input type="hidden" id="pageId" name="pageId" value="2518445">
+          <div class="u-form-group u-form-name">
+            <label for="name-c01d" class="u-form-control-hidden u-label">Name</label>
+            <input type="text" placeholder="Enter your Name" id="name" name="name"
+              class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-1"
+              required="">
+          </div><!-- always visible -->
+          <div class="u-form-email u-form-group">
+            <label for="email-c01d" class="u-form-control-hidden u-label">Check In Date</label>
+            <input type="date" id="checkindate" placeholder="Check In Date" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2">
+          </div>
+          <div class="u-form-email u-form-group">
+            <label for="email-c01d" class="u-form-control-hidden u-label">Check Out Date</label>
+            <input type="date" id="checkoutdate" placeholder="Check Out Date" class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2">
+          </div>
+          <div class="u-form-email u-form-group">
+            <label for="email-c01d" class="u-form-control-hidden u-label">How many Adults</label>
+            <input type="number" placeholder="How many Adults" id="adultsnumber" name="email"
+              class="u-border-1 u-border-white u-input u-input-rectangle u-radius-10 u-text-grey-70 u-white u-input-2"
+              required="">
+          </div>
+          <div class="u-form-group u-form-submit">
+            <a onclick="chatOnWhatsapp()"
+              class="u-btn u-btn-round u-btn-submit u-button-style u-palette-3-base u-radius-10 u-btn-1"><img
+                src="assets/whatsapp.svg" style="height: 0.875rem;" /> Book </a>
+            <input type="submit" value="submit" class="u-form-control-hidden">
+          </div>
+          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try
+            again. </div>
+          <input type="hidden" value="" name="recaptchaResponse">
+        </form>
+      </div>
+      <div class="u-social-icons u-spacing-42 u-social-icons-1">
+      </div>
+    </div>
+  </section>
+  <footer class="u-align-center-sm u-align-center-xs u-black u-clearfix u-footer" id="sec-1d45">
+    <div>
+      <a href="#" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
+        <img src="assets/logo.svg" class="u-logo-image u-logo-image-1">
+      </a>
+      <div style="text-align: center;">
+        <strong class="u-text u-text-7" style="font-size: 25px;">Blue Creek</strong>
+        <label class="u-small-text u-text u-text-variant u-text-8" style="font-size: 10px;">Village Resort</label>
+        
+      </div>
+      <!-- <div class="u-social-icons u-spacing-20 u-social-icons-1">
+        <a class="u-social-url" title="facebook" target="_blank" href=""><span
+            class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link"
+              preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+              <use xlink:href="#svg-de1f"></use>
+            </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-de1f">
+              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+              <path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+            c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
+            </svg></span>
+        </a>
+        <a class="u-social-url" title="twitter" target="_blank" href=""><span
+            class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link"
+              preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+              <use xlink:href="#svg-a80e"></use>
+            </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-a80e">
+              <circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle>
+              <path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
             c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
             c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
             c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
-            c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
-          </a>
-          <a class="u-social-url" title="instagram" target="_blank" href=""><span class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-628c"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-628c"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
-            z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+            c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path>
+            </svg></span>
+        </a>
+        <a class="u-social-url" title="instagram" target="_blank" href=""><span
+            class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link"
+              preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+              <use xlink:href="#svg-628c"></use>
+            </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-628c">
+              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+              <path fill="#FFFFFF"
+                d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+            z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z">
+              </path>
+              <path fill="#FFFFFF"
+                d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path>
+              <path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
             C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
-            c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
-          </a>
-          <a class="u-social-url" title="linkedin" target="_blank" href=""><span class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-b70e"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b70e"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+            c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
+            </svg></span>
+        </a>
+        <a class="u-social-url" title="linkedin" target="_blank" href=""><span
+            class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link"
+              preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+              <use xlink:href="#svg-b70e"></use>
+            </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b70e">
+              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+              <path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
             C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
-            H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
-          </a>
-        </div>
-      </div>
-      <p align="center" style="
+            H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path>
+            </svg></span>
+        </a>
+      </div> -->
+    </div>
+    <p align="center" style="
         margin-bottom: 0px;
         font-size: 10px;
       ">Designed by firmtech</p>
-</footer>
+  </footer>
 
-  </body>
+</body>
+
 </html>

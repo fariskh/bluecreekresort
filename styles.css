@@ -1,10 +1,4 @@
-/*begin-commonstyles library*//*!
- * froala_editor v4.0.6 (https://www.froala.com/wysiwyg-editor)
- * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2021 Froala Labs
- */
-
- .fr-clearfix::after {
+.fr-clearfix::after {
     clear: both;
     display: block;
     content: "";
@@ -17967,7 +17961,7 @@
   .flash {
     animation-name: flash;
   }
-  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
   @keyframes pulse {
     from {
       transform: scale3d(1, 1, 1);
@@ -39486,6 +39480,14 @@
       border: 3px solid #007bff;
       border-radius: 10px;
     }
+    .popup-main {
+      border-radius: 30px;
+      box-shadow: #00000087 0px 0px 15px 15px;
+      backdrop-filter: blur(15px);
+      background-color: #ffffff80;
+      width: 85vw;
+      height: 250px;
+    }
   }
   @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -39498,4 +39500,25 @@
       border: 3px solid #007bff;
       border-radius: 10px;
     }
+
+    .popup-main {
+      border-radius: 30px;
+      box-shadow: #00000087 0px 0px 15px 15px;
+      backdrop-filter: blur(15px);
+      background-color: #ffffff80;
+      width: 35vw;
+      height: 250px;
+    }
   }
+
+  input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.9em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+  
+
