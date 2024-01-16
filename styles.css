@@ -37925,11 +37925,6 @@
 
   /* impoted from index.html */
 
-
-  .u-section-2 {
-    background-image: url("assets/main.jpg");
-    background-position: 50% 50%;
-  }
   .u-section-2 .u-sheet-1 {
     min-height: 675px;
   }
@@ -38387,7 +38382,7 @@
   }
   .u-section-4 .u-image-1 {
     min-height: 321px;
-    background-image: url("assets/act2-swing.jpg");
+    background-image: url("assets/act2-img2.jpg");
     background-position: 50% 50%;
   }
   .u-section-4 .u-container-layout-2 {
@@ -38575,8 +38570,8 @@
     }
   }
    .u-section-5 {
-    background-image: linear-gradient(0deg, rgba(41,46,51,0.25), rgba(41,46,51,0.25)), url("assets/creek-1.jpg");
-    background-position: 50% 50%;
+    background-image: linear-gradient(0deg, rgba(41,46,51,0.25), rgba(41,46,51,0.25)), url("assets/pool.jpg");
+    background-position: 70% 67%;
   }
   .u-section-5 .u-sheet-1 {
     min-height: 636px;
@@ -38699,7 +38694,7 @@
     grid-gap: 30px;
   }
   .u-section-6 .u-image-1 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("assets/act3-tent-with-bglight.jpg");
+    background-image: url("assets/act3-tent-with-bglight.jpg");
     background-position: 50% 50%;
   }
   .u-section-6 .u-container-layout-1 {
@@ -38716,8 +38711,8 @@
     margin-top: 20px;
   }
   .u-section-6 .u-image-2 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("assets/act3-swing.jpg");
-    background-position: 50% 50%;
+    background-image: url("assets/act3-swing.jpg");
+    background-position: 62% 50%;
   }
   .u-section-6 .u-container-layout-2 {
     padding: 30px;
@@ -38733,8 +38728,8 @@
     margin-top: 20px;
   }
   .u-section-6 .u-image-3 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("assets/act3-camp-fire.jpg");
-    background-position: 50% 50%;
+    background-image: url("assets/act3-camp-fire.jpg");
+    background-position: 54% 50%;
   }
   .u-section-6 .u-container-layout-3 {
     padding: 30px;
@@ -38744,6 +38739,14 @@
     margin-bottom: 0;
     margin-top: 270px;
   }
+
+  .sections-edited {
+    margin-left: 0 !important; 
+    margin-bottom: 0 !important;
+    margin-top: auto !important;
+    color: white !important;
+  }
+
   .u-section-6 .u-text-6 {
     margin-left: 0;
     margin-bottom: 0;
@@ -39388,7 +39391,7 @@
     }
   }
    .u-section-10 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("assets/creek-2.jpg");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("assets/book-room-bg.jpg");
     background-position: 50% 50%;
   }
   .u-section-10 .u-sheet-1 {
@@ -39493,6 +39496,11 @@
       background-size: cover;
       box-shadow: 0px 0px 10px 2px black;
     }
+
+    .u-section-2 {
+      background-image: url("assets/main-mobile.jpg");
+      background-position: 50% 50%;
+    }
   }
   @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -39518,6 +39526,10 @@
       height: 252px;
       background-size: cover;
       box-shadow: 0px 0px 30px 3px black;
+    }
+    .u-section-2 {
+      background-image: url("assets/main-desktop.jpg");
+      background-position: 50% 50%;
     }
   }
 
@@ -39567,4 +39579,8 @@
 
   .book-room-text {
     font-weight: bold;
+  }
+
+  .slide-show {
+    margin-top: 30px;
   }

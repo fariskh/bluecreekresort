@@ -21,15 +21,15 @@ function chatOnWhatsapp() {
     window.open(whatsapp_url, `_blank`);
 }
 
-$(document).ready(function() {
-    var dateInput = document.getElementById('checkoutdate');
-    dateInput.value = 'This is the placeholder';
-    dateInput.addEventListener('input', function() {
-        if (!dateInput.value || dateInput.value === 'mm/dd/yyyy') {
-            dateInput.value = 'This is the placeholder';
-        }
-    });
-})
+// $(document).ready(function() {
+//     var dateInput = document.getElementById('checkoutdate');
+//     dateInput.value = 'This is the placeholder';
+//     dateInput.addEventListener('input', function() {
+//         if (!dateInput.value || dateInput.value === 'mm/dd/yyyy') {
+//             dateInput.value = 'This is the placeholder';
+//         }
+//     });
+// })
 
 $(window).scroll(function() {
     $(".mainheader").css("backdrop-filter", "blur(15px)");
