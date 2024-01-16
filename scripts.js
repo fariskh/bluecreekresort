@@ -3,17 +3,27 @@ function chatOnWhatsapp() {
     let checkindate  = $("#checkindate").val();
     let checkoutdate = $("#checkoutdate").val();
     let adultsnumber = $("#adultsnumber").val();
-    console.log("1", checkindate);
+
+    if (!name) {
+        alert("Name is required"); return;
+    }
+    if (!checkindate) {
+        alert("check-in date is required"); return;
+    }
+    if (!checkoutdate) {
+        alert("Check-out date is required"); return;
+    }
+    if (!adultsnumber) {
+        alert("Adults count is required"); return;
+    }
 
     let dateObject = new Date(checkindate);
-    console.log("1", dateObject);
     let options = { day: '2-digit', month: 'short'};
 
     checkindate = dateObject.toLocaleString('en-gb', options);
 
     dateObject = new Date(checkoutdate);
     checkoutdate = dateObject.toLocaleString('en-gb', options);
-
 
     let content      = "Hi, I am " + name + "!, and I am reaching out to explore room availability for " + adultsnumber + " members from " + checkindate + " to " + checkoutdate + ". Could you kindly share information on the availability and rates?";
     let whatsapp_url = "https://wa.me/919947460835?text=" + encodeURI(content);
