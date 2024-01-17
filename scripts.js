@@ -44,7 +44,8 @@ function chatOnWhatsapp() {
 $(window).scroll(function() {
     $(".mainheader").css("backdrop-filter", "blur(15px)");
     $(".mainheader").css("background-color", "rgba(175,175,175,0.25)");
-    document.getElementById("bgm").play();
+    var bgm = document.getElementById("bgm");
+    bgm.play();
 });
 
 window.onscroll = function(){
